@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饭饭后台登录页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <canvas id="stars"></canvas>
+    <div id="container"></div>
+    <div id="root">
+        <div class="login">
+            <div class="login-title">饭饭后台管理系统</div>
+            <div class="login-center">
+                <div class="login-account">
+                    <img class="login-icon fl" src="image/icon_user.png" alt="/">
+                    <input id="name" class="login-input fl" type="text" placeholder="请输入管理员名称">
+                </div>
+                <div class="login-password">
+                    <img class="login-icon fl" src="image/icon_pwd.png" alt="/">
+                    <input id="pwd" class="login-input fl" type="password" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="login-btn">登&nbsp;&nbsp;录</div>
+        </div>
+    </div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/starfall.js"></script>
+<script src="js/login.js"></script>
+<script>
+    $(function(){
+        loginMod.loginCheck('#name','#pwd','.login-btn');
+    });
+</script>
+</html>

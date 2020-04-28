@@ -1,0 +1,22 @@
+*{padding: 0%;margin:0%}
+ul ,li {list-style: none;}
+.fabu_navBox{width: 100%;height: 10%;background: rgba(255,255,255,0.1);}
+.fabu_navTitle{color: gray;padding-top: 1.5%;padding-left: 2%;font-size: 16;}
+.fabu_search{width: 95%;height: 24%;background: rgba(255,255,255,0.1);margin-top: 3%;margin-left: 2%;}
+.fabu_searchTop{width: 100%;height: 40%;}
+.fabu_searchTopText{color: grey;padding-top: 1.5%;padding-left: 2%;}
+.fabu_serchBottom{width: 100%;height: 60%;background: rgb(244, 240, 240,0.5);float: left;}
+.fabu_searchInp{width:150px;height:40px;background-color: #fff;border-radius: 10px;margin-left: 3%;margin-top: 1.5%;padding-left: 1%;color: gray;}
+.fabu_select{width: 70px;height: 35px;background-color: #fff;font-size: 14px;color: gray;margin-left: 1%;border-radius: 10px;}
+.fabu_btn{width: 60px;height: 40px;background-color:rgba(255, 99, 71, 0.5);border: none;margin-left: 5%;border-radius: 10px;color: #fff;font-size: 12px;}
+.fabu_detail{width: 95%;height: 50%;background: rgba(255,255,255,0.1);margin-top: 3%;margin-left: 2%;}
+.fubu_detailTitle{width: 100%;height: 15%;float: left;background: rgba(255,255,255,0.1);}
+.fabu_detailTitles{width: 100%;height: 17%;float: left;background: rgb(244, 240, 240,0.5);border-bottom: 1px solid gray;}
+.fabu_detailList li{float: left;margin-top: 1%;font-size: 16;color: gray;}
+.fabu_userID{width: 11%;height: 100%;padding-left: 2%;}
+.fabu_userPhone{width: 14%;height: 100%;}
+.fabu_userCaishi{width: 8%;height: 100%;}
+.fabu_userContent{width: 21%;height: 100%;}
+.fabu_userState{width: 5%;height: 100%;}
+.fabu_detailContent{width: 100%;height: 68%;background: rgb(244, 240, 240,0.5);float: left}
+.fabu_detailList1 li{float: left;margin-top: 1%;font-size: 14;color: gray;}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饭饭后台主页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/houtai.css">
+    <link rel="stylesheet" type="text/css" href="css/user.css">
+    <link rel="stylesheet" type="text/css" href="css/fabu.css">
+    <link rel="stylesheet" type="text/css" href="css/culture.css">
+    <link rel="stylesheet" type="text/css" href="css/quanxian.css">
+</head>
+<body>
+    <div id="root">
+        <div class="home-nav bR bS">
+            <div class="nav-title">饭饭后台管理系统</div>
+            <div class="out-btn">
+                <span class="fl"><img class="span-icon" src="image/tuichu.png" alt="/"></span>
+                <span class="fl">退出</span>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="home-left fl bR">
+                <div class="left-title"><img class="left-icon1" src="image/tongji.png" alt="/">统计<span class="sp1">▼</span><span class="sp">▲</span></div>
+                <div class="title-list1">
+                    <li>用户分析</li>
+                </div>
+                <div class="left-title"><img class="left-icon2" src="image/guanli.png" alt="/">管理<span class="sp">▼</span><span class="sp1">▲</span></div>
+                <div class="title-list2">
+                    <li>用户管理</li>
+                    <li>发布管理</li>
+                    <li>推送管理</li>
+                </div>
+                <div class="left-title"><img class="left-icon3" src="image/shezhi.png" alt="/">设置<span class="sp">▼</span><span class="sp1">▲</span></div>
+                <div class="title-list3">
+                    <li>账户权限</li>
+                </div>
+            </div>
+            <div class="home-right fl bR bS">
+                <!-- 用户分析 -->
+                <div id="fenxi">
+                    <div class="fenxi-head">
+                        <span class="fenxi-span">用户分析</p>
+                    </div>
+                    <!-- <p class="fenxi-p2">用户增长</p> -->
+                    <!-- <hr style='width:940px'> -->
+                    <p class="fenxi-p3">※ 本页根据昨日数据来计算，并非实时数据</p>
+                    <div class="fenxi-div1">
+                        <div class="fenxi-div2">
+                            <p>昨日核心指标</p>
+                        </div>
+                        <div class="fenxi-div3">
+                            <ul>
+                                <li>
+                                    <div style="border-left-style: none;">
+                                        <p>新组成用户</p>
+                                        <p>100</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>用户管理<span style="font-size: 10px;margin-left: 10px;">昨日访问</span></p>
+                                        <p>100</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>积累注册</p>
+                                        <p>10000</p>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                </div>
+                <!-- 用户管理 -->
+                <div id="yonghu">
+                    <div id='top-box'>
+                        <span>用户信息</span>
+                        <div id='searchBox'>
+                            <div id="searchUser" class="searchUser fl"><img class="searchIcon" src="image/mirror.png" alt="/"></div>
+                            <div class="searchDiv fl">
+                                <input type="text" name="search" id="search" placeholder="输入手机号查找">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div id='searchBox'> -->
+                        <!-- <div id='div1'>
+                            <p>搜索条件</p>
+                        </div> -->
+                        <!-- <div id='div2'>
+                            <input type="text" name="search" id="search" placeholder="输入手机号查找">
+                            <button id='searchUser'>查找</button>
+                        </div> -->
+                    <!-- </div> -->
+                    <div id="userMsg">
+                        <!-- <div id='userDiv1'>
+                            <p>用户列表 </p>
+                        </div> -->
+                        <div id='userDiv2'>
+                            <div class="userTitle uof">用户头像</div>
+                            <div class="userTitle">昵称</div>
+                            <div class="userTitle">手机号</div>
+                            <div class="userTitle uof">发布内容</div>
+                            <div class="userTitle">操作</div>
+                        </div>
+                        <div id='userDiv'></div>
+                        <div id="pager"></div>
+                    </div>
+                </div>
+                <!-- 发布管理 -->
+                <div id="fabu">
+                    <div class="fabu_navBox">
+                        <p class="fabu_navTitle">发布管理</p>
+                    </div>
+                    <div class="fabu_search">
+                        <div class="fabu_searchTop">
+                            <p id="fabu_searchTopText" class="fabu_searchTopText">搜索条件</p>
+                        </div>
+                        <div class="fabu_serchBottom">
+                            <input id="fabu_searchInp" class="fabu_searchInp" type="text" name="id" value="请输入菜谱编号">
+                            <input id="fabu_searchInp1" class="fabu_searchInp" type="text" name="data" value="请输入发布时间">
+                            <span style="color:gray;margin-left: 6%;margin-top: 1.5%;">状态</span>
+                            <select id="fabu_select" class="fabu_select">
+                                <option>全部</option>
+                            </select>
+                            <span style="color:gray;margin-left: 6%;margin-top: 1.5%;">每页显示</span>
+                            <select id="fabu_select1" class="fabu_select">
+                                <option>5</option>
+                            </select>
+                            <button id="fabu_btn" class='fabu_btn'>确定</button>
+                        </div>
+                    </div>
+                    <div class="fabu_detail">
+                        <div class="fubu_detailTitle">
+                            <span style="color: #aca8a8;margin-top: 1%;padding-left: 2%;font-size: 16;display: inline-block;">菜谱信息</span>
+                            <span style="color: lightcyan;font-size: 16;display: inline-block;padding-left: 80%;">打印表格</span>
+                        </div>
+                        <div class="fabu_detailTitles">
+                            <ul class='fabu_detailList'>
+                                <li class="fabu_userID">用户账号</li>
+                                <li class="fabu_userID">用户名称</li>
+                                <li class="fabu_userPhone">联系方式</li>
+                                <li class="fabu_userCaishi">菜式</li>
+                                <li class="fabu_userContent">内容</li>
+                                <li class="fabu_userID">建立时间</li>
+                                <li class="fabu_userCaishi">阅读量</li>
+                                <li class="fabu_userState">状态</li>
+                                <li class="fabu_userState">操作</li>
+                            </ul>
+                        </div>
+                        <div class="fabu_detailContent">
+                            <ul class="fabu_detailList1">
+                                <li id="fabu_userID" class="fabu_userID">13582410280</li>
+                                <li id='fabu_userName'class="fabu_userID">喵柠</li>
+                                <li id="fabu_userPhone" class="fabu_userPhone">13582410280</li>
+                                <li id="fabu_userCaishi" class="fabu_userCaishi">菜式</li>
+                                <li id="fabu_userContent" class="fabu_userContent">
+                                    <textarea style="border: none;" id="fabu_content">许多人都知道，苗族鼓藏节是苗族最隆重的祭祖节日，节日里宴请亲戚和赠送亲友的一大礼物就</textarea>
+                                </li>
+                                <li id="fabu_userData" class="fabu_userID">2020-4-20</li>
+                                <li id="fabu_userRead" class="fabu_userCaishi">3750</li>
+                                <li id="fabu_userState" class="fabu_userState">登录</li>
+                                <li id="fabu_userDeal" class="fabu_userState">删除</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 推送管理 -->
+                <div id="tuisong">
+                    <div id='cul-top-box'>
+                        <p>文化管理</p>
+                        <h6>文化列表</h6>
+                    </div>
+                    <div id="culMsg">
+                        <div id='culDiv1'>
+                            <p>文化列表 </p>
+                            <button id="newAdd" >新增</button>
+                        </div>
+                        <div id='cul-userDiv2'>
+                            <div class="cul-userTitle">编号</div>
+                            <div class="cul-userTitle  cul-uof">推送名称</div>
+                            <div class="cul-userTitle">缩略图</div>
+                            <div class="cul-userTitle  cul-uof">文案</div>
+                            <div class="cul-userTitle">操作</div>
+                        </div>
+                        <div id='cultureDiv'>
+                            <!-- <div id='cultureList'>
+                                <div class="cultureContent">1</div>
+                                <div class="cultureContent uoa">15231176191</div>
+                                <div class="cultureContent"><img class="cultureImg" alt='缩略' src='1.jpg'/></div>
+                                <div class="cultureContent uob">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+                                <div class="cultureContent">删除</div>
+                            </div> -->
+                        </div>
+                        <div id="cul-pager"></div>
+                    </div>
+                </div>
+                <!-- 账户权限 -->
+                <div id="quanxian">
+                    <div class="quanxian-head">
+                        <span class="quanxian-title">账户权限</span>
+                        <span class="quanxian-sp1">▼</span><span class="quanxian-sp2">▲</span>
+                        <span class="quanxian-add">+</span>
+                        <span class="quanxian-msg">新增权限</span>
+                    </div>
+                    <div class="quanxian-body">
+                        <li class="quanxian-li1">角色</li>
+                        <li class="quanxian-li2">对应权限列表</li>
+                        <li class="quanxian-li3">操作</li>
+                    </div>
+                    <div class="quanxian-content">
+                        <div class="quanxian-list">
+                            <li class="quanxian-list1">管理员</li>
+                            <li class="quanxian-list2">客户信息 员工信息 所有订单信息 消息发送中心 历史消息查看 客户管理 消息管理</li>
+                            <li class="quanxian-list3">删除</li>
+                        </div>
+                        <div class="quanxian-list">
+                            <li class="quanxian-list1">平台工作者</li>
+                            <li class="quanxian-list2">用户分析和导出 用户管理 基本配置</li>
+                            <li class="quanxian-list3">删除</li>
+                        </div>
+                    </div>
+
+                    <div class="quanxian-head">
+                        <span class="quanxian-title">账户列表</span>
+                        <span class="quanxian-sp3">▼</span><span class="quanxian-sp4">▲</span>
+                        <span class="quanxian-add">+</span>
+                        <span class="quanxian-msg">新增账户</span>
+                    </div>
+                    <div class="quanxian-body">
+                        <li class="quanxian-li-1">用户名</li>
+                        <li class="quanxian-li-2">角色</li>
+                        <li class="quanxian-li-3">名字</li>
+                        <li class="quanxian-li-4">手机号</li>
+                        <li class="quanxian-li-5">状态</li>
+                        <li class="quanxian-li-6">操作</li>
+                    </div>
+                    <div class="quanxian-content">
+                        <div class="quanxian-list">
+                            <li class="quanxian-list-1">cc</li>
+                            <li class="quanxian-list-2">管理员</li>
+                            <li class="quanxian-list-3">张三</li>
+                            <li class="quanxian-list-4">13838773877</li>
+                            <li class="quanxian-list-5">正常</li>
+                            <li class="quanxian-list-6">删除</li>
+                        </div>
+                        <div class="quanxian-list">
+                            <li class="quanxian-list-1">bb</li>
+                            <li class="quanxian-list-2">管理员</li>
+                            <li class="quanxian-list-3">李明</li>
+                            <li class="quanxian-list-4">15532773877</li>
+                            <li class="quanxian-list-5">正常</li>
+                            <li class="quanxian-list-6">删除</li>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/user.js"></script>
+<script src="js/culture.js"></script>
+<script src="js/quanxian.js"></script>
+<script>
+    $(function(){
+        var datas;
+        window.onload = function(){
+            fetch('https://www.kkknet.cn/searchuser',{
+                method:"POST",
+            body:JSON.stringify({
+                userid : '13582410275'
+            }),
+            headers:{
+                "Content-type":"application/json;charset=utf-8"
+            }
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+        }
+
+        homeMod.leftSlide('.sp','.sp1');
+        homeMod.listCheck('.home-left',['#fenxi','#yonghu','#fabu','#tuisong','#quanxian']);
+        quanxianMod.listShow('.quanxian-sp1','.quanxian-sp2','1',['.quanxian-body','.quanxian-content']);
+        quanxianMod.listShow('.quanxian-sp3','.quanxian-sp4','2',['.quanxian-body','.quanxian-content']);
+    });
+</script>
+</html>

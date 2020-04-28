@@ -1,0 +1,11 @@
+*{ margin: 0;padding: 0; }
+body,html{ 
+    width: 100%;height: 100%;overflow: hidden;
+    background-color: black;position: relative; 
+}
+ul,ol,li{ list-style: none; }
+input{ border: none;outline: none; }
+.fl{ float: left; }
+.bR{ border-radius: 5px; }
+.op{ opacity: 0.8; }
+.bS{ box-shadow: 0 0 5px rgb(0, 0, 0); }
