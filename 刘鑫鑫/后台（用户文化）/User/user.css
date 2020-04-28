@@ -1,0 +1,175 @@
+*{
+    margin: 0;padding: 0;
+}
+#box{
+    margin: 0 auto;
+    background-color:gainsboro ;
+    width: 800px;
+    height: 1000px;
+    padding-top: 10px;
+}
+#top-box{
+    flex:1;
+    margin: 0 auto;
+    justify-content:center;
+    width: 700px;
+    height: 70px;
+    background-color:#fff;
+}
+
+#top-box p{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+#top-box h6{
+    margin-left: 30px;
+}
+#searchBox{
+    flex:1;
+    margin: 0 auto;
+    width: 700px;
+    height: 140px;
+    margin-top: 20px;
+}
+#div1{
+    width: 700px;
+    height: 60px;
+    background-color: rgb(192, 187, 187);
+    line-height: 60px;
+}
+#div1 p{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    color: black;
+}
+#div2{
+    width: 700px;
+    height: 60px;
+    background-color: white;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#div2 input{
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px gainsboro solid;
+    padding-left: 5px;
+}
+#div2 button{
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+}
+#userMsg{
+    width: 700px;
+    height: 600px;
+    background-color:#fff;
+    margin: 0 auto;
+}
+#userDiv1{
+    width: 680px;
+    height: 40px;
+    margin: 0 auto;
+    border-bottom: 2px gray solid;
+    line-height: 30px;
+}
+#userDiv1 p{
+    color: gray;
+    font-size: 13px;
+}
+#userDiv2{
+    width: 680px;
+    height: 40px;
+    margin: 0 auto;
+    border-bottom: 2px gray solid;
+    display: flex;  
+    color: gray;
+    font-size: 13px;
+    align-items: center;
+    
+}
+.userTitle{
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+.userTitle.uof{
+    flex:0 0 15%;
+    justify-content: center;
+}
+#userDiv{
+    margin: 0 auto;
+    width: 680px;
+    height: 450px;
+}
+#userList{
+    width: 680px;
+    height: 40px;
+    margin: 0 auto;
+    border-bottom: 1px gray solid;
+    display: flex;  
+    color: gray;
+    font-size: 13px;
+    align-items: center;
+}
+.userContent{
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+.userContent.uoa{
+    flex:0 0 15%;
+    justify-content: center;
+} 
+.userContent a{
+    text-decoration: none;
+    color: red;
+}
+.userImg{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+/* page */
+#pager{
+    margin: 0 auto;
+    width: 680px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.page{
+    width: 380px;
+    height: 30px;
+}
+.button{
+    width: 50px;
+    height: 20px;
+    border: 1px red solid;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+.toPage{
+    width: 60px;
+    height: 22px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}

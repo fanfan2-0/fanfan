@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增文化</title>
+    <link rel="stylesheet" type="text/css" href="./culture.css">
+</head>
+<body>
+    <div id='box'>
+        <div id='top-box'>
+            <p>文化管理</p>
+            <h6 id="goNow">现有列表</h6>
+            <h6 class="now">新增列表</h6>
+        </div>
+        <div id="culAdd">
+            <div id='culAdd1'>
+                <p>文化信息</p>
+            </div>
+            <div id='culAdd2'>
+                <p>文章名称：</p>
+                <input type="text" name="addtitle" id="addtitle" placeholder="输入文章名称">
+            </div>
+            <div id='culAdd3'>
+                <p>缩略图:</p>
+                <!-- <input type="file" name='addImg' id='addImg' accept="image/*"  placeholder='+'> -->
+                <div id='showBox'>
+                    <img id="showImg" src="" alt="未上传"/>
+                </div>
+                <a href="javascript:;" class="file">点击选择文件
+                    <input type="file" name="" id="addImg">
+                </a>
+                <p>限上传一张缩略图</p>
+            </div>
+            <div id='culAdd4'>
+                <div><p>请输入正文</p></div>
+                <textarea id='addText' rows="10" cols="30" placeholder="请输入文本">
+                </textarea>
+            </div>
+            <div id='culAdd5'>
+                <button class="up" id="up">提交</button>
+            </div> 
+        </div>
+    </div>
+    <script src ="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src='add.js' type = "text/javascript"></script>
+</body>
+</html>
