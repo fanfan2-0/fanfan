@@ -1,0 +1,54 @@
+ul,li{ padding:0;margin:0;list-style:none}
+#fenxi{
+    background-color: rgb(231, 231, 231);
+    width: 1000px;
+    height: 600px;
+}
+.fenxi-p1{
+    color:gray;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+.fenxi-p2{
+    color: black;
+    margin-left: 50px;
+    font-weight: bold;
+}
+.fenxi-p3{
+    color:gray;
+    font-size: 13px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.fenxi-div1{
+    width: 940px;
+    margin: 0 auto;
+}
+.fenxi-div2{
+    background-color: rgb(221, 220, 220);
+    width: 940px;
+    height: 50px;
+}
+.fenxi-div2 p{
+    font-size: 15px;
+    line-height: 50px;
+}
+.fenxi-div3{
+    background-color: white;
+    width: 940px;
+    height: 240px;
+}
+.fenxi-div3 ul li {
+    float: left;
+    text-align: center;
+}
+.fenxi-div3 ul li div{
+    width: 300px;
+    margin-top: 40px;
+    border-left-style: solid;
+    border-color: gainsboro;
+}
+.fenxi-div3 ul li div p:nth-child(2){
+    margin-top: 50px;
+    font-size: 30px;
+}

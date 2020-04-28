@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台</title>
+    <link rel="stylesheet" href="./houtai.css">
+</head>
+<body onload="load()">
+    <div id="fenxi">
+        <p class="fenxi-p1">用户分析</p>
+        <p class="fenxi-p2">用户增长</p>
+        <hr style='width:940px'>
+        <p class="fenxi-p3">本页根据昨日数据来计算，并非实时数据</p>
+        <div class="fenxi-div1">
+            <div class="fenxi-div2">
+                <p>昨日核心指标</p>
+            </div>
+            <div class="fenxi-div3">
+                <ul>
+                    <li>
+                        <div style="border-left-style: none;">
+                            <p>新组成用户</p>
+                            <p>100</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>用户管理<span style="font-size: 10px;margin-left: 10px;">昨日访问</span></p>
+                            <p>100</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>积累注册</p>
+                            <p>10000</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var datas;
+    window.onload = function(){
+        fetch('https://www.kkknet.cn/searchuser',{
+            method:"POST",
+        body:JSON.stringify({
+            userid : '13582410275'
+        }),
+        headers:{
+            "Content-type":"application/json;charset=utf-8"
+        }
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }
+</script>
+</html>
